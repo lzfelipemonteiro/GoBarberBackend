@@ -53,8 +53,8 @@
 **RF - Requisistos Funcionais**
 
 - O usuário deve poder listar todos prestadores de serviços cadastrados
-- O usiário deve poder listar os dias de um mês com pelo menos um horário disponível de um prestador
-- O usiário deve poder listar os horários disponíveis em um dia específico de um prestador
+- O usuário deve poder listar os dias de um mês com pelo menos um horário disponível de um prestador
+- O usuário deve poder listar os horários disponíveis em um dia específico de um prestador
 - O Usuário deve poder realizar um novo agendamento com um novo prestador
 
 **RNF - Requisitos Não Funcionais**
