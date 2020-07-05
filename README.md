@@ -63,8 +63,9 @@
 
 **RN - Regras de Negócio**
 
-- Cada Agendamento deve duarar 1h exatamente
 - Os agendamento devem estar disponíveis entre 8h às 18h (Primeiro às 8h, último às 17h)
+
+- Cada Agendamento deve duarar 1h exatamente
 - O usuário não pode agendar em um horário já ocupado
 - O usuário não pode agendar em um horário que já passou
 - O usuário não pode agendar serviço consigo mesmo
