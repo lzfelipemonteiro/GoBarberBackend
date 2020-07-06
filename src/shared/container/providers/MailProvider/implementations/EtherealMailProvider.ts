@@ -24,7 +24,7 @@ export default class EtherealMailProvider implements IMailProvider {
         },
       })
 
-      console.log(account)
+      // console.log(account)
 
       this.client = transporter
     })
