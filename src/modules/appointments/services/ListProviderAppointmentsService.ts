@@ -5,6 +5,7 @@ import Appointment from '@modules/appointments/infra/typeorm/entities/Appointmen
 import IAppointmentRepository from '@modules/appointments/repositories/IAppointmentsRepository'
 
 import ICacheProvider from '@shared/container/providers/CacheProvider/models/ICacheProvider'
+import { classToClass } from 'class-transformer'
 
 interface IRequestDTO {
   provider_id: string
@@ -33,6 +34,8 @@ class ListProviderAppointmentsService {
 
     let appointments = await this.cacheProvider.recover<Appointment[]>(cacheKey)
 
+    // let appointments
+
     if (!appointments) {
       appointments = await this.appointmentRepository.findAllInDayFromProvider({
         provider_id,
@@ -43,7 +46,7 @@ class ListProviderAppointmentsService {
 
       // console.log('Buscou no banco')
 
-      await this.cacheProvider.save(cacheKey, appointments)
+      await this.cacheProvider.save(cacheKey, classToClass(appointments))
     }
 
     return appointments
