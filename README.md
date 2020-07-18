@@ -1,15 +1,15 @@
 # Recuperação de senha
 
-**RF - Requisistos Funcionais**
+**RF - Requisitos Funcionais**
 
- - O usuário deve poder recuperar seua senha informando o seu e-mail
+ - O usuário deve poder recuperar sua senha informando o seu e-mail
  - O usuário deve receber um e-mail com instruções de recuperação de senha
  - O usuário deve poder resetar a sua senha
 
 **RNF - Requisitos Não Funcionais**
 
 - Utilizar o Mailtrap para testar envios em ambiente de dev
-- Ultilizar Amazom SES para envios em produção
+- Utilizar Amazom SES para envios em produção
 - O envio de emails deve acontecer em segundo plano
 
 **RN - Regras de Negócio**
@@ -19,20 +19,20 @@
 
 # Atualização do perfil
 
-**RF - Requisistos Funcionais**
+**RF - Requisitos Funcionais**
 
 - O usuário deve poder atualizar o seu nome, email e senha
 
 **RN - Regras de Negócio**
 
-- O usuário não pode alterar o seu email para um email já ultilizado
-- Para atulizar a sua senha, o usuário deve informar a senha antiga
-- Para atulizar a sua senha, o usuário precisa confirmar a nova senha
+- O usuário não pode alterar o seu email para um email já utilizado
+- Para atualizar a sua senha, o usuário deve informar a senha antiga
+- Para atualizar a sua senha, o usuário precisa confirmar a nova senha
 
 
 # Painel do prestador
 
-**RF - Requisistos Funcionais**
+**RF - Requisitos Funcionais**
 
 - O usuário deve poder listar seus agendamentos de um dia específico
 - O prestador deve receber uma notificação sempre que houver um novo agendamento
@@ -50,7 +50,7 @@
 
 # Agendamento de Serviços
 
-**RF - Requisistos Funcionais**
+**RF - Requisitos Funcionais**
 
 - O usuário deve poder listar todos prestadores de serviços cadastrados
 - O usuário deve poder listar os dias de um mês com pelo menos um horário disponível de um prestador
@@ -65,7 +65,7 @@
 
 - Os agendamento devem estar disponíveis entre 8h às 18h (Primeiro às 8h, último às 17h)
 
-- Cada Agendamento deve duarar 1h exatamente
+- Cada Agendamento deve durar 1h exatamente
 - O usuário não pode agendar em um horário já ocupado
 - O usuário não pode agendar em um horário que já passou
 - O usuário não pode agendar serviço consigo mesmo
