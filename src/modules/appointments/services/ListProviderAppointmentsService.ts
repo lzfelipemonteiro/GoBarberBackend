@@ -31,12 +31,14 @@ class ListProviderAppointmentsService {
     month,
   }: IRequestDTO): Promise<Appointment[]> {
     const cacheKey = `provider-appointments:${provider_id}:${year}-${month}:${day}`
-
+    // console.log(cacheKey)
     let appointments = await this.cacheProvider.recover<Appointment[]>(cacheKey)
+    // console.log(appointments)
 
     // let appointments
 
     if (!appointments) {
+      console.log('entrou na condição')
       appointments = await this.appointmentRepository.findAllInDayFromProvider({
         provider_id,
         day,

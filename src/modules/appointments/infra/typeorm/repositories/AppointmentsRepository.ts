@@ -51,6 +51,7 @@ class AppointmentsRepository implements IAppointmentsRepository {
     month,
     year,
   }: IFindAllInDayFromProviderDTO): Promise<Appointment[]> {
+    console.log('Buscando no banco')
     const parsedDay = String(day).padStart(2, '0')
     const parsedMonth = String(month).padStart(2, '0')
 
@@ -64,6 +65,8 @@ class AppointmentsRepository implements IAppointmentsRepository {
       },
       relations: ['user'],
     })
+
+    console.log(appointments)
 
     return appointments
   }
